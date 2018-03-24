@@ -36,6 +36,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/contact', (req, res) => {
+    res.render('contact', {
+        pageTitle: "Contact Us Page of Saiem's Site"
+    });
+});
+
 app.get('/projects', (req, res) => {
     res.render('projects');
 });
